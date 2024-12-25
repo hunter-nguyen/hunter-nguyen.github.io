@@ -7,4 +7,5 @@ export default defineConfig({
   define: {
     'process.env.VITE_LAST_UPDATED': JSON.stringify(new Date().toLocaleString()),
   },
+  base: "/hunter-nguyen.github.io/"
 })
