@@ -1,32 +1,34 @@
-import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import './App.css'
-import Image from './Components/Image/Image.jsx'
-import profilepicture from './assets/profilepicture.jpg'
-import Card from './Components/Card.jsx'
-import Resume from './pages/Resume.jsx'
+import React from 'react';
+import { Routes, Route, Link, Outlet } from 'react-router-dom';
+import Resume from './pages/Resume.jsx';
+import LinkedIn from './pages/LinkedIn.jsx'; // Import the LinkedIn component
+
+const Layout = () => (
+  <div className="container">
+    <header className="header">
+      <h1>hi! i'm hunter, a CS student @ SJSU</h1>
+      <h2>this website is a work in progress</h2>
+      <nav>
+        <Link to="/">Home</Link>
+        <br />
+        <Link to="/resume">Resume</Link>
+        <br />
+        <Link to="/linkedin">LinkedIn</Link>
+      </nav>
+    </header>
+    <Outlet />
+  </div>
+);
 
 function App() {
   return (
-    <div className="container">
-      <header className="header">
-        <h1>Welcome to My Portfolio</h1>
-        <Image imgReference={profilepicture} imgAlt="Profile Picture"></Image>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/resume">Resume</Link>
-        </nav>
-      </header>
-      <Routes>
-        <Route path="/" element={<div>Home Content</div>} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-      <footer className="footer">
-        <h2>Contact Me</h2>
-        <p>Email: your-email@example.com</p>
-      </footer>
-    </div>
-  )
+    <Routes>
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/linkedin" element={<LinkedIn />} />
+      <Route path="/" element={<Layout />}>
+    </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { RESUME_URL } from '../config/urls';
 
 const Resume = () => {
-  return (
-    <div>
-      <h1>My Resume</h1>
-      <p>Here is my resume content.</p>
-      <a href="https://hunternguyen.me/resume" target="_blank" rel="noopener noreferrer">
-        View my full resume
-      </a>
-    </div>
-  );
+  useEffect(() => {
+    window.location.href = RESUME_URL; // Redirects to the resume URL
+  }, []);
+
+  return null; // Return null because we just want the redirect
 };
 
-export default Resume; 
+export default Resume;
+  
