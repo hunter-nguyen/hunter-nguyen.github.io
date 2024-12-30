@@ -5,16 +5,14 @@
     <script type="text/javascript">
       // Define a map of routes and their corresponding redirection URLs
       const routeMap = {
-        "/resume": "https://drive.google.com/file/d/1AEtrrYdtFte-XMISacYBBRK3aGJ8hCR8/edit",
+        "/resume": "/Hunter_Nguyen_Resume-27.pdf",
         "/linkedin": "https://linkedin.com/in/hunterhnguyen", // Replace with your actual LinkedIn URL
       };
 
-      // Get the current path
       const currentPath = window.location.pathname;
 
       // Check if the current path matches a route in the map
       if (routeMap[currentPath]) {
-        // Redirect to the mapped URL
         window.location.replace(routeMap[currentPath]);
       } else {
         // If the route is not found, redirect to the homepage
