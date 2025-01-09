@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { RESUME_URL } from '../config/urls';
 
 const Resume = () => {
   useEffect(() => {
