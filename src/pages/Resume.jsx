@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const Resume = () => {
   useEffect(() => {
-    window.location.href = "/Hunter_Nguyen_Resume-26.pdf"; // Redirects to the PDF in public
+    window.location.href = "/Hunter_Nguyen_Resume.pdf"; // Redirects to the PDF in public
   }, []);
   return null; // Return null because we just want the redirect
 };
