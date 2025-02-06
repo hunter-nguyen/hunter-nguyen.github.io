@@ -34,22 +34,21 @@ const Layout = () => (
       <nav className="mt-4 flex flex-col items-center">
         <div className="inline-flex pt-5">
 
-          <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="Connect on LinkedIn!">
             <Link to="/linkedin" className="text-white" target='_blank'>
-              <FaLinkedinIn size={24}/>
+              <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="Connect on LinkedIn!">
+                <FaLinkedinIn size={24}/>
+              </button>
             </Link>
-          </button>
-          <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="View my Resume!">
             <Link to="/resume" className="text-white" target='_blank'>
-              <FaFileAlt size={24}/>
-
+              <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="View my Resume!">
+                <FaFileAlt size={24}/>
+              </button>
             </Link>
-          </button>
-          <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="Look at my projects!">
             <Link to="/github" className="text-white" target='_blank'>
-              <FaGithub size={24}/>
+              <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="Look at my projects!">
+                <FaGithub size={24}/>
+              </button>
             </Link>
-          </button>
         </div>
 
       </nav>
