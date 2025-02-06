@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Link, Outlet } from 'react-router-dom';
 import Resume from './pages/Resume.jsx';
-import {LinkedIn, GitHub} from './pages/Links.jsx';
+import { LinkedIn } from './pages/Links.jsx';
 import { FaLinkedinIn, FaFileAlt, FaGithub  } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import "./index.css"
@@ -44,11 +44,11 @@ const Layout = () => (
                 <FaFileAlt size={24}/>
               </button>
             </Link>
-            <Link to="/github" className="text-white" target='_blank'>
+            <a href="https://www.github.com/hunter-nguyen" className="text-white" target='_blank' rel="noopener noreferrer">
               <button className="bg-gray-600 hover:bg-blue-900 font-bold py-7 px-7 rounded-full ml-4" title="Look at my projects!">
                 <FaGithub size={24}/>
               </button>
-            </Link>
+            </a>
         </div>
 
       </nav>
@@ -62,7 +62,6 @@ function App() {
     <Routes>
       <Route path="/resume" element={<Resume />} />
       <Route path="/linkedin" element={<LinkedIn />} />
-      <Route path="/github" element={<GitHub />} />
       <Route path="/" element={<Layout />}>
     </Route>
     </Routes>
