@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 import "./index.css";
 
 const Layout: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
