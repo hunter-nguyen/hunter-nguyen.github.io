@@ -2,8 +2,7 @@
   "name": "website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://hunter-nguyen.github.io/hunter-nguyen.github.io/",
-  "scripts": {
+    "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
