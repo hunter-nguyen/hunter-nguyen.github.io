@@ -77,12 +77,13 @@ const Layout: React.FC = () => {
 function App() {
   return (
     <Routes>
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/linkedin" element={<LinkedIn />} />
       <Route path="/" element={<Layout />}>
+        <Route path="resume" element={<Resume />} />
+        <Route path="linkedin" element={<LinkedIn />} />
       </Route>
     </Routes>
   );
 }
+
 
 export default App;
