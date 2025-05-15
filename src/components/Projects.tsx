@@ -28,7 +28,7 @@ const projectsData: Project[] = [
   {
     title: "AVA | 🥇 Best Use of Groq",
     description: "AVA (Accessible Voice Assistant) is a hands-free, voice-powered AI agent that performs complex web tasks through natural language commands. Built with Groq's ultra-fast transcription and LLM APIs, AVA combines speech recognition, structured task planning, and browser automation for seamless, accessible digital interaction.",
-    technologies: ["Python", "FastAPI", "Groq", "PyGame", "Browser Use", "SpeechRecognition", "distil-whisper", "Perplexity API"],
+    technologies: ["Python", "Browser Use", "FastAPI", "Groq", "Perplexity API"],
     githubUrl: "https://github.com/n8thantran/HackHayward2025",
     devpostUrl: "https://devpost.com/software/ava-zamdu0"
   },
