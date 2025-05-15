@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <div style={{ marginTop: '2rem' }}>
         <h2>About</h2>
         <p style={{ marginBottom: '0.5rem' }}>
-          Hi, I'm Hunter, a CS student at SJSU. I'm passionate about engineering with AI/ML, and software engineering in general.
+          Hi, I'm Hunter, a CS student at SJSU. I'm passionate about engineering with AI/ML, software engineering, and solving challenging problems.
         </p>
         <p style={{ marginBottom: '0.5rem' }}>
           I love meeting new people and having great conversations. If you're reaching out about an opportunity, a collaboration, or just want to chat, feel free to get in touch.
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           <a href="https://linkedin.com/in/hunterhnguyen">LinkedIn</a>
           <a href="https://x.com/hunterhnguyen">X/Twitter</a>
           <a href="https://github.com/hunter-nguyen">GitHub</a>
-          <a href="/resume">Resume</a>
+          <a href="/resume" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
     </div>
