@@ -44,7 +44,7 @@ const Experience: React.FC = () => {
       {experienceData.map((exp, index) => (
         <div key={index} style={{ marginBottom: '2rem', borderLeft: '2px solid #ccc', paddingLeft: '1rem' }}>
           <h3 style={{ marginTop: 0, marginBottom: '0.25rem' }}>
-          {exp.company} • {exp.position}
+            <span style={{ fontWeight: 'bold' }}>{exp.company}</span> • {exp.position}
             {exp.websiteUrl && (
               <span style={{ marginLeft: '0.5rem', fontSize: '0.8rem' }}>
                 [<a href={exp.websiteUrl} target="_blank" rel="noopener noreferrer">Website</a>]

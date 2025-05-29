@@ -12,11 +12,18 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
-    title: "fillosophy | 🏆 SFHacks 2025 Winner",
+    title: "fillosophy | 🏆 SFHacks 2x Winner",
     description: "fillosophy is an AI-powered document workflow tool that helps first-gen immigrants navigate complex medical paperwork. By combining multilingual video input with RAG-based automation, it intelligently parses, contextualizes, and fills out forms end-to-end.",
     technologies: ["React", "LlamaIndex", "Python", "Whisper", "Gemini API"],
     githubUrl: "https://github.com/jask1m/fillosophy",
     devpostUrl: "https://devpost.com/software/form-force"
+  },
+  {
+    title: "Spectra | 🏆 AgentHacks 3x Winner + Grand Prize (sponsored by OpenAI, Anthropic, Vercel, and more)",
+    description: "Spectra is a lightweight AI security platform that monitors and red teams agentic workflows in real time. It detects prompt vulnerabilities, injects adversarial prompts, and suggests automatic fixes to harden system prompts over time. Developers can wrap Spectra around any agent with a single line of code for seamless observability and safety insights.",
+    technologies: ["Python", "FastAPI", "LangChain", "LangGraph", "Next.js", "TypeScript"],
+    githubUrl: "https://github.com/flotoria/spectra",
+    devpostUrl: "https://devpost.com/software/spectra-8rtuo1"
   },
   {
     title: "FireZero | 🥈 HackDavis Second Overall",
